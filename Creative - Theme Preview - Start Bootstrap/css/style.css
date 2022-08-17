@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#header {
+  padding: 20px 20rem;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+#header .left {
+  float: left;
+}
+#header .left a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  font-size: 20px;
+}
+#header .left a:hover {
+  color: #fff;
+}
+#header .right {
+  float: right;
+  margin-top: 5px;
+}
+#header .right a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  font-size: 14.4px;
+  margin-left: 25px;
+}
+#header .right a:hover {
+  color: #fff;
+}
+
+.first {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 21rem 0;
+  position: relative;
+  z-index: 1;
+}
+.first .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(92, 77, 66, 0.8);
+}
+.first h1 {
+  color: white;
+  font-size: 56px;
+  font-weight: 500;
+}
+.first p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.15rem;
+  margin-bottom: 50px;
+}
+.first a {
+  background-color: #f4623a;
+  color: #fff;
+  border-color: #b74a2c;
+  padding: 20px 36px;
+  border-radius: 10rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  /*boyuk herflerle*/
+}
+.first a:hover {
+  background-color: #c34e2e;
+}
+.first hr {
+  height: 0.2rem;
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #f4623a;
+  border: 2px solid #f4623a;
+}
+
+.second {
+  padding: 120px 0;
+  background-color: rgb(244, 98, 58);
+  text-align: center;
+}
+.second h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 200;
+}
+.second p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 50px;
+}
+.second hr {
+  height: 0.2rem;
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+.second a {
+  color: #000;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  border-color: #f8f9fa;
+  padding: 20px 36px;
+  font-weight: 600;
+  font-size: 15x;
+  text-transform: uppercase;
+  /*boyuk herflerle*/
+}
+
+.third {
+  padding: 120px 0;
+}
+.third .third-text {
+  text-align: center;
+}
+.third .third-text h2 {
+  font-size: 2rem;
+  color: #212529;
+  font-weight: 500;
+}
+.third .third-text hr {
+  margin: 1.5rem auto;
+  height: 0.2rem;
+  width: 3.25rem;
+  background-color: #f4623a;
+  border: 2px solid #f4623a;
+}
+.third .third-boxs {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.third .third-boxs .third-box {
+  width: 25%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+.third .third-boxs .third-box .third-icon .icon {
+  color: rgb(244, 98, 58);
+  font-size: 2.8rem;
+  padding: 20px 0;
+}
+.third .third-boxs .third-box h3 {
+  font-size: 24px;
+  color: #212529;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.third .third-boxs .third-box p {
+  color: #6c757D;
+}
+
+.fourth {
+  overflow: hidden;
+}
+.fourth .fourth-picture {
+  width: 33.3333333333%;
+  /*important*/
+  float: left;
+  position: relative;
+}
+.fourth .fourth-picture:hover .overlay {
+  opacity: 0.8;
+}
+.fourth .fourth-picture:hover .fourth-text {
+  opacity: 1;
+}
+.fourth .fourth-picture img {
+  width: 100%;
+  /*Scroll yaranmisdi itdi*/
+  vertical-align: bottom;
+  /*asagidan mesafeni yox edir*/
+}
+.fourth .fourth-picture .overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 98, 58, 0.9);
+  opacity: 0;
+  transition: 0.4s;
+}
+.fourth .fourth-picture .fourth-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+}
+.fourth .fourth-picture .fourth-text h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13.6px;
+  text-transform: uppercase;
+  /*boyuk herflerle*/
+}
+.fourth .fourth-picture .fourth-text h3 {
+  color: #fff;
+  font-size: 19.2px;
+}
+
+.fifth {
+  background-color: rgb(33, 37, 41);
+  padding: 120px 0;
+  text-align: center;
+}
+.fifth h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+.fifth a {
+  color: #000;
+  background-color: #f8f9fa;
+  padding: 1.25rem 2.25rem;
+  border-radius: 10rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  /*boyuk herflerle*/
+}
+
+.sixth {
+  padding: 8rem 0;
+}
+.sixth .sixth-text {
+  text-align: center;
+}
+.sixth .sixth-text h2 {
+  color: #212529;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.sixth .sixth-text hr {
+  margin: 1.5rem auto;
+  height: 0.2rem;
+  width: 3.25rem;
+  background-color: #f4623a;
+  border: 2px solid #f4623a;
+}
+.sixth .sixth-text p {
+  color: #6c757D;
+}
+.sixth form {
+  width: 30%;
+  margin: 30px auto 0 auto;
+  /*yuxari sag asagi sol*/
+}
+.sixth form input {
+  width: 100%;
+  border: 1px solid #dc3545;
+  height: 58px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  outline: none;
+  /*vermesek sicani inputa vuranda border qara olur*/
+  padding-left: 15px;
+}
+.sixth form textarea {
+  border: 1px solid #dc3545;
+  outline: none;
+}
+.sixth form button {
+  width: 100%;
+  background-color: #f4623a;
+  opacity: 0.65;
+  border: 1px solid #f4623a;
+  color: #fff;
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.sixth .Phone {
+  text-align: center;
+  margin-top: 45px;
+}
+.sixth .Phone i {
+  color: #6c757d;
+  font-size: 2rem;
+}
+.sixth .Phone p {
+  margin-top: 8px;
+  color: #212529;
+}
+
+#footer {
+  text-align: center;
+  background-color: rgb(248, 249, 250);
+  padding: 3rem 0;
+}/*# sourceMappingURL=style.css.map */
